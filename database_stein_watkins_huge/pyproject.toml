@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "database_stein_watkins_huge"
+version = "20110713.dev0"
+maintainers = [{name = "The Sage Developers", email = "sage-devel@googlegroups.com"}]
+license = {text = "Public Domain"}
+dynamic = ["description"]
+dependencies = ["database_stein_watkins_mini"]
+
+[project.urls]
+Home = "https://www.sagemath.org"
+
+[tool.hatch.build]
+include = [
+  # Just include one file for now to claim the PyPI package
+  "database_stein_watkins/a.002.bz2",
+]
+
+[tool.hatch.build.targets.sdist]
+
+[tool.hatch.build.targets.wheel]
+packages = ["database_stein_watkins"]
