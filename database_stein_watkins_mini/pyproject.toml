@@ -12,6 +12,9 @@ dynamic = ["description"]
 [project.urls]
 Home = "https://www.sagemath.org"
 
+[tool.hatch.build]
+dev-mode-dirs = ["."]
+
 [tool.hatch.build.targets.sdist]
 
 [tool.hatch.build.targets.wheel]

@@ -18,6 +18,7 @@ include = [
   # Just include one file for now to claim the PyPI package
   "database_stein_watkins/a.002.bz2",
 ]
+dev-mode-dirs = ["."]
 
 [tool.hatch.build.targets.sdist]
 
